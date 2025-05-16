@@ -8,23 +8,7 @@ import {
     TouchableWithoutFeedback,
     Keyboard,
 } from "react-native";
-import { useState, useEffect } from "react";
-
-// ✅ 키보드 상태 감지 Hook
-function useKeyboardVisible() {
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const showSub = Keyboard.addListener("keyboardDidShow", () => setVisible(true));
-        const hideSub = Keyboard.addListener("keyboardDidHide", () => setVisible(false));
-        return () => {
-            showSub.remove();
-            hideSub.remove();
-        };
-    }, []);
-
-    return visible;
-}
+import useKeyboardVisible from "../../../hooks/useKeyboardVisible";
 
 const LoginForm = () => {
     const keyboardVisible = useKeyboardVisible();
