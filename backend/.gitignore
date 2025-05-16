@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+.uv/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Mypy & Ruff
+.mypy_cache/
+.dmypy.json
+ruff_cache/
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# VSCode Jupyter notebook
+.ipynb_checkpoints/
+
+# Alembic migration env (if used)
+alembic/versions/*.pyc
